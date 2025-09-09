@@ -24,14 +24,14 @@
             <form action="">
                 <input type="text" placeholder="First Name" required>
                 <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Phone Number" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="email" placeholder="Email" required pattern="^[^@\s]+@[^@\s]+\.[a-zA-Z]{2}$">
+                <input type="number" placeholder="Phone Number (05########)" pattern="^05\d{8}$" required inputmode="numeric">
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Create Account</button>
             </form>
         </div>
         <div class="action">
-            <button>Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
