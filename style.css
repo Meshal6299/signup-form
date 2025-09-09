@@ -2,8 +2,48 @@
     font-family: "Custom Font";
     src: url(./fonts/Norse-Bold.otf);
 }
-
 body{
     background-color: antiquewhite;
-    font-family: "Custom Font",sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.img{
+    width: 35%;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(./images/tree.avif);
+    background-position: -100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img p{
+    color: white;
+    font-size: 13px;
+}
+.form{
+    width: 65%;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+.logo{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    top: 22%;
+}
+.logo img{
+    height: 130px;
+}
+.logo h2{
+    font-family: "Custom Font";
+    color: white;
+    font-size: 90px;
+    font-weight: 10;
 }
