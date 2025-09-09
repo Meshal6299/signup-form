@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: "Custom Font",sans-serif;
+}
