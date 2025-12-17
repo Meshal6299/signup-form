@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="./" type="image/x-icon">
 </head>
 <body>
-    <div class="img">
-        <div class="logo">
-            <img src="./images/odin-lined.png">
-            <h2>ODIN</h2>
-        </div>
-        <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+  <div class="img">
+    <div class="logo">
+    <img src="./images/odin-lined.png">
+      <h2>ODIN</h2>
     </div>
-    <div class="form">
-        <div class="text1">
-            <p>This is not a real online service! You Know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started. <br><br> You <i>know</i> you want to.</p>
-        </div>
-        <div class="form-holder">
-            <h2>Let's do this!</h2>
-            <form action="">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required pattern="^[^@\s]+@[^@\s]+\.[a-zA-Z]{2}$">
-                <input type="number" placeholder="Phone Number (05########)" pattern="^05\d{8}$" required inputmode="numeric">
-                <input type="password" id="password" placeholder="Password" required>
-                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-                <button type="submit">Create Account</button>
-            </form>
-        </div>
-        <div class="action">
-            <p>Already have an account? <a href="">Log in</a></p>
-        </div>
+    <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+  </div>
+  <div class="form">
+    <div class="text1">
+      <p>This is not a real online service! You Know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started. <br><br> You <i>know</i> you want to.</p>
     </div>
+    <div class="form-holder">
+      <h2>Let's do this!</h2>
+      <form action="" id="signup-form" novalidate>
+        <div class="form-grid">
+          <div class="form-control">
+            <input type="text" id="fname" placeholder="First Name">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="lname" placeholder="Last Name">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="number" placeholder="Phone Number (05########)">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" placeholder="Password">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <small class="error-message"></small>
+          </div>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <div class="action">
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
 </body>
 </html>
